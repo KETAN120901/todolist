@@ -64,6 +64,6 @@ app.delete('/delete/:id', (req, res) => {
       .then(() => res.json({ success: true }))
       .catch(err => res.status(500).json({ success: false, error: err }));
   });
-app.listen(5000,()=>{
-    console.log("server is running on port 5000");
+app.listen(PORT,()=>{
+    console.log(`server is running on port ${PORT}`);
 })
